@@ -1,0 +1,461 @@
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.search--bar{
+    height: 70px;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+::placeholder{
+    color: #399ade;
+}
+
+.search--bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #399ade;
+}
+
+.search--bar button img{
+    width: 25px;
+}
+.search--bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #399ade;
+    cursor: pointer;
+}
+.models {
+    display:none;
+}
+.loginButton {
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    min-height: 10px;
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    background-color: #399ade;
+  }
+  
+  
+  a.loginButton {
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 150px;
+    padding: 10px 50px;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+    color: white;
+  }
+  
+  .log {
+    color: #399ade;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #399ade;
+  }
+  
+  a.loginButton:hover {
+    color: white;
+    box-shadow: 0 0 20px #399ade;
+    background-color: #399ade;
+  }
+  
+.menu-openner span {
+    margin-right:10px;
+}
+.menu-closer {
+    width:32px;
+    height:32px;
+    display:none;
+    font-size: 30px;
+}
+main {
+    flex:1;
+    padding:20px;
+}
+h1 {
+    font-family:'Hepta Slab', Helvetica, Arial;
+}
+.projeto-area {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.projeto-item {
+    text-align: center;
+    max-width:250px;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    margin:0 auto 50px auto;
+}
+.projeto-item a {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration: none;
+}
+.projeto-item--img {
+    width:200px;
+    height:auto;
+    background-color:rgba(234, 233, 233, 0.988);
+    border-radius:100%;
+    box-shadow:0px 30px 200px rgba(0, 0, 0, 0.2);
+}
+.projeto-item--img img {
+    width:100%;
+    height:auto;
+}
+.projeto-item--add {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#388bc5;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top:-25px;
+    transition:all ease .2s;
+}
+.projeto-item a:hover .projeto-item--add {
+    background-color:#244c88;
+}
+.projeto-item--price {
+    font-size:15px;
+    color:#333;
+    margin-top:5px;
+}
+.projeto-item--name {
+    font-size:20px;
+    font-weight: bold;
+    color:#4070F4;
+    margin-top:5px;
+}
+.projeto-item--desc {
+    font-size:13px;
+    color:#4070F4;
+    margin-top:10px;
+}
+
+.projetoWindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+.projetoWindowBody {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+}
+.projetoBig {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.projetoBig--back {
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color:#000;
+}
+.projetoBig img {
+    height:400px;
+    width:auto;
+}
+.projetoInfo {
+    flex:1;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    padding-bottom:50px;
+}
+.projetoInfo h1 {
+    margin-top:50px;
+}
+.projetoInfo .projetoInfo--desc {
+    font-size:15px;
+    color:#999;
+    margin-top:10px;
+    font-family:'Lato',Helvetica,Arial;
+}
+.projetoInfo--sector {
+    color:#CCC;
+    text-transform: uppercase;
+    font-size:14px;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.projetoInfo--sizes {
+    display:flex;
+        gap: 5px;
+    overflow:hidden;
+}
+.projetoInfo--size {
+    border-radius: 20px;
+    padding:10px 15px;
+    color:#000;
+    background-color:#EEE;
+    font-size:13px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.projetoInfo--size:hover {
+    background-color:#CCC;
+}
+.projetoInfo--size.selected {
+    background-color:#399ade;
+    color:#FFF;
+}
+.projetoInfo--size.selected span {
+    color:#D6D6D6;
+}
+.projetoInfo--size span {
+    font-size:12px;
+    color:#999;
+    font-weight: normal;
+}
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -120px 60px;
+  }
+}
+
+#InfoBanner{
+    margin-top: 20px;
+  width: 100%;
+}
+
+.reversed {
+  display: inline-block;
+  padding: 0.3em;
+  padding-left: 0.3em;
+  margin-left: 0.8em;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  color: #fff;
+  font-size: 15px;
+  background-color:#ef5350;
+}
+.reversed:before, .reversed:after {
+  content: '';
+  width: 0;
+  height: 0;
+  right: -0.8em;
+  position: absolute;
+  top: 0;
+  border-top: 0.8em solid #ef5350;
+}
+.reversed:after {
+  top: auto;
+  bottom: 0;
+  border-top: none;
+  border-bottom: 0.8em solid #ef5350;
+}
+.reversedRight:before, .reversedRight:after{
+  border-right: 0.8em solid transparent;
+  right: -0.8em;
+}
+.reversedRight{
+  width: 17px;
+  border-radius: 5px 0px 0px 5px;
+  animation: tilt 2s infinite;
+}
+@keyframes tilt {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 9px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.reversedLeft{
+  margin-left:15px;
+  border-radius: 0px 5px 5px 0px;
+}
+.reversedLeft:before, .reversedLeft:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 0.8em solid transparent;
+  left: -0.8em;
+  position: absolute;
+}
+.reversedLeft:after {
+  top: auto;
+  bottom: 0;
+  border-top: 0.8em solid #ef5350;
+  border-bottom: none;
+}
+.reversedLeft:before {
+  bottom: auto;
+  top:0;
+  border-bottom: 0.8em solid #ef5350;
+  border-top: none;
+}
+.projetoInfo--qtarea {
+    display:inline-flex;
+    background-color:#EEE;
+    border-radius:10px;
+    height:30px;
+}
+.projetoInfo--qtarea button {
+    border:0;
+    background-color:transparent;
+    font-size:17px;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#333;
+}
+
+.options{
+    margin-top: 30px;
+
+}
+.it{
+    border-radius: 20px;
+    padding:10px 15px;
+    color: #FFF;
+    background-color:#399ade;
+    font-size:13px;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none;
+}
+.lt{
+    border-radius: 20px;
+    padding:10px 15px;
+    color: #FFF;
+    background-color:#399ade;
+    font-size:13px;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none; 
+}
+.projetoInfo--addButton {
+    margin-top:30px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#399ade;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:15px;
+}
+.projetoInfo--addButton:hover {
+    background-color:#399ade;
+}
+.projetoInfo--cancelButton {
+    display:inline-block;
+    cursor:pointer;
+    margin-top:30px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#ef5350;
+    color:#FFF;
+
+}
+.projetoInfo--cancelMobileButton {
+    display:none;
+    color:rgb(0, 0, 0);
+    padding:20px 30px;
+    border-radius:20px;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    margin-top: 25px;
+}
+
+@media (max-width:1000px) {
+    .projeto-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+    .projeto-area {
+        display:block;
+    }
+    .projeto-item {
+        max-width:100%;
+    }
+    header {
+        display:flex;
+    }
+    main {
+        padding-top:60px;
+    }
+
+    .projetoWindowArea {
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .projetoWindowBody {
+        width:100vw;
+        display:block;
+        padding:20px;
+        border-radius:0;
+        box-shadow:none;
+        margin:0;
+    }
+
+    .projetoBig img {
+        width: 55%;
+        height: auto;
+    }
+
+    .projetoInfo h1 {
+        margin-top:20px;
+    }
+
+    .projetoInfo--qtarea {
+        height:60px;
+    }
+    .projetoInfo--qtarea button {
+        font-size:25px;
+        padding:0px 25px;
+    }
+    .projetoInfo--cancelMobileButton {
+        display:block;
+    }
+}
